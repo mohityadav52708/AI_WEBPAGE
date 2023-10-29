@@ -1,0 +1,1093 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Orbitron&family=Ubuntu&family=Varela+Round&display=swap');
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url(https://www.simplilearn.com/ice9/free_resources_article_thumb/Top-5-Career-Choices-In-AI-and-Key-Skills-Needed-To-Help-You-Land-One.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+      }
+      
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 107vh;
+        background-color: rgba(0, 0, 0, 0.7); 
+        pointer-events: none;
+        z-index: -1;
+        object-fit: cover;
+      }
+.container{
+    width: 100%;
+    height: 100vh;
+    transition: 3s linear;
+    height: 100vh;
+}
+.secondcontainer{
+    object-fit: cover;
+    width: 80%;
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.topbar{
+    margin-top: 30px;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navbar styles */
+.navbar {
+    /* width: 80%; */
+    /* justify-content: center; */
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    animation: slidesecond 2s ease-in;
+    animation: slide 2s ease-in;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* animation: slidesecond 2s ; */
+}
+.nav-list li{
+    margin: 30px 30px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-list li a:hover {
+    color: aqua; /* Change color on hover */
+    transition: 0.3s ease-in;
+}
+.mainhome{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: baseline; */
+    object-fit: cover;
+}
+.mainhome h1{
+    margin-top: 200px;
+    font-size: 100px;
+    color: aqua;
+}
+/* background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%); */
+.mainhome {
+    overflow: hidden;
+    /* white-space: nowrap; */
+    border-right: 0.15rem solid orange;
+    animation: blink 0.75s step-end infinite,typing 3.5s steps(40) infinite;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+@keyframes slidesecond {
+    0% {
+      
+        /* margin-right: 100%; */
+        transform: translateX(-50%);
+    } 
+    100% {
+        margin-right: 0%;
+        transform: translateX(0);
+    } 
+}
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+    to{
+     width: 100%;
+    }
+}
+@keyframes blink {
+    from{
+        border-color: transparent;
+    }
+    to{
+        border-color: 2px solid aqua;
+    }
+}
+.secondhome{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #01141D  , #0d2f3f ); 
+    /* background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%);  */
+       
+}
+.backgroundofsecondhome{
+    width: 100%;
+    height: 100vh;
+}
+.demo{
+    width: 90%;
+    height: 50vh;
+    /* background-color: red; */
+}
+.demo img{
+    width: 100%;
+    height: 100vh;
+}
+.secondhome .backgroundofsecondhome{
+    display: flex;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    right: 0;
+    display: flex;
+    flex: 11;
+    font-family: 'Courier New', monospace;
+    font-family: 'Orbitron';
+}
+.slideanim{
+    width: 100%;
+}
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;
+}
+.slideanim .slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+
+.slideanim::after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.backgroundofsecondhome .rightsecondhome{
+    margin-top: 200px;
+    width: 50%;
+    height: 60vh;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    animation: slide 2s ;
+}
+.rightsecondhome h1{
+    color: rgb(73, 255, 255);
+    font-size:60px;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+.rightsecondhome span{
+    color: white;
+    font-size: 50px;
+    width: 100%;
+    animation: slide 1s;
+    font-family: 'Orbitron', sans-serif;
+}
+.rightsecondhome #explore{
+    width: 200px;
+    height: 59px;
+    margin-top: 30px;
+    font-size: 15px;
+    border-radius: 28px;
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%); 
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    padding: 20px 32px 20px 32px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+.firsthorizontal{
+    color: rgb(37, 35, 35);
+    height: 4px;
+    width: 100%;
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+}
+
+.thirdhome{
+    position: absolute;
+    width: 100%;    
+    height: 540vh;
+      background-color: #030210;
+      display: flex;
+      justify-content: center;
+    /* margin-tvscode-file://vscode-app/c:/Users/KIIT/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmlop: 50px; */
+    /* background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%);     */
+}
+.minithirdhome{
+    width: 100%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+.thirdhome h1{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-top: 120px;
+    font-size: 45px;
+}
+.thirdhome span{
+    font-family: 'Orbitron', sans-serif;
+    color: aqua;
+}
+.thirdhome .thirdpara{
+    margin-top: 20px;
+    width: 50%;
+    height: 20vh;
+    font-size: 18px;
+}
+.thirdhome p{
+    text-align: center;
+    color: grey;
+}
+.boxes{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: cen; */
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.firstbox, .secondbox,.thirdbox,.fourthbox{
+    width: 20%;
+    margin-left: 20px;
+    text-align: left;
+    background-color: transparent;
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%);
+    padding: 40px 40px 40px 40px;
+    padding: 29px 38px 12px 40px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF29;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;    
+}
+.firstbox:hover,.secondbox:hover,.thirdbox:hover,.fourthbox:hover{
+    transform: translateY(-10px);
+    transition: 0.7s ;
+    /* transition: transform 0.3s ease-in;   */
+    color: black;
+    background-image: radial-gradient(at top right,#01141D 0%, #00E1FF24 50%);
+}
+
+
+.boxicon{
+    width: 60px;
+    background-color: #2EDAF1;
+    padding: 16px 16px 16px 16px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.thirdicon_first a{
+    width: 50%;
+    height: 50px;
+
+}
+.thirdicon_first a i{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.boxpara{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+.boxpara h2{
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+}
+.boxpara p{
+    margin-top: 20px;
+    text-align: left;
+}
+.button{
+    border: 2px solid black;
+
+}
+.button{
+    width: 120px;
+    height: 40px;
+    font-size: 1.2vw;
+    border-radius: 18px;
+    background-color: aquamarine;
+    margin-top: 20px;
+    border-color: #2EDAF1;
+    background-color: transparent;
+    color: white;
+}
+.button:hover{
+    cursor: pointer;
+    /* transform: translateY(-10px); */
+        transition: transform 0.2s ease-in;  
+        color: black;
+        background-color: aqua;
+        transition: 0.3s ease-in;
+} 
+.aboutsection{
+    width: 100%;
+    height: 200vh;
+    background-color: red;
+}
+.horizontal_fouthhome{
+    margin-top: 150px;
+    width: 82%;
+    margin-left: 10%;
+    margin-right: 9%;
+}
+
+.company_title{
+    
+    margin-top: 50px;
+    width: 80%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    /* background-color: red; */
+}
+.company_title .para h2{
+    color: aqua;
+    
+    font-family: 'Orbitron', sans-serif;
+}
+.company_title .para span{
+    color: white;
+}
+.automation_company #automation{
+    width: 200px;
+    height: 80px;
+    opacity: 0.5;
+    margin-left: 40px;
+}
+.blocknet_company #blocknet{
+    width: 190px;
+    height: 70px;
+    opacity: 0.5;
+    margin-left: 40px;
+
+}
+.robotx_company #robotx{
+    width: 180px;
+    height: 70px;
+    margin-left: 40px;
+
+    opacity: 0.5;
+}
+.ziiblock_company #ziiblock{
+    width: 180px;
+    height: 65px;
+    opacity: 0.5;
+    margin-left: 40px;
+
+}
+#automation:hover,#blocknet:hover,#robotx:hover,#ziiblock:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: 0.8s;
+    opacity: 1;
+}
+.business_ai{
+    width: 100%;
+    height: 70vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+.image_of_business_ai{
+    width: 40%;
+}
+.image_of_business_ai img{
+    width: 100%;
+}
+.business_para{
+    width: 60%;
+}
+.business_para .heading{
+    width: 100%;
+    height: 10vh;
+}
+.business_para .heading h1{
+    color: white;
+    font-size: 35px;
+}
+.business_container{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+.business_container .para{
+    width:50%;
+}
+.business_container .para p{
+    text-align: left;
+}
+.business_container .image{
+    width: 30%;
+    margin-left: 20px;
+}
+.business_container .image img{
+    width: 100%;
+    border-radius: 8px;
+}
+.business_container .button{
+    width: 200px;
+    height: 59px;
+    margin-top: 30px;
+    font-size: 15px;
+    border-radius: 28px;
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%); 
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    padding: 20px 32px 20px 32px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.services{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.services .heading h1{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.services .heading span
+{
+    color: aqua;
+}
+.services .servicebox{
+    width: 100%;
+    display: flex;
+    height: 200vh;
+    margin-top: 50px;
+    justify-content: center;
+
+    /* background-color: red; */
+}
+
+.services .servicebox .first_service_box{
+    width: 23%;
+    height: 50vh;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-connected-dots-lines-blue-background-communication-technology-network-concept-with-moving-lines-dots_34629-1120.jpg);
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%);
+    margin-left: 25px;
+    opacity: 0.5;
+    border-radius: 18px;
+    border-style: solid;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+}
+.services .servicebox .first_service_box:hover{
+    opacity: 1;
+    border-style: solid;
+    /* border-width: 1px 1px 1px 1px; */
+    border-color: #2EDAF1;
+    /* border-radius: 50px 50px 50px 50px; */
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.services .servicebox .second_service_box{
+    width: 23%;
+    height: 50vh;
+    /* background-color: blue; */
+    background-image: url(https://www.wallpapertip.com/wmimgs/12-128482_grey-abstract-background.jpg);
+    
+    margin-left: 25px;
+    opacity: 0.5;
+    margin-left: 25px;
+    opacity: 0.5;
+    border-radius: 18px;
+    border-style: solid;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+}
+.services .servicebox .second_service_box:hover{
+    opacity: 1;
+    border-style: solid;
+    border-color: #2EDAF1;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.services .servicebox .third_service_box:hover{
+    opacity: 1;
+    border-style: solid;
+    border-color: #2EDAF1;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.content_of_first_service_box
+{
+    width: 100%;
+    height: 35vh;
+    opacity: 1;
+}
+.content_of_first_service_box {
+    width: 100%;
+    height: 35hv;
+}
+
+.content_of_first_service_box  i{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+    opacity: 0.3;
+    margin-left: 50px;
+}
+.content_of_first_service_box  p{
+    color: rgb(248, 248, 248);
+    font-size: 15px;
+    text-align: left;
+       /* font-family: 'Orbitron', sans-serif; */
+    margin-top: 50px;
+    opacity: 1;
+    padding-left: 20px;
+    /* top:0; */
+}
+.content_of_first_service_box  #machinelearning{
+    color: rgb(248, 248, 248);
+    text-align: center;
+    font-size: 23px;
+       font-family: 'Orbitron', sans-serif;
+    opacity: 1;
+    padding-left: 20px;
+}
+.content_of_first_service_box:hover > i{
+    text-align: left;
+    opacity: 1;
+    color: aqua;
+}
+.content_of_first_service_box  i{
+    text-decoration: none;
+    color: rgb(7, 255, 255);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+.services .servicebox .second_service_box{
+    width: 23%;
+    height: 50vh;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-connected-dots-lines-blue-background-communication-technology-network-concept-with-moving-lines-dots_34629-1120.jpg);
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%);
+    margin-left: 25px;
+    opacity: 0.5;
+    border-radius: 18px;
+    border-style: solid;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+}
+.services .servicebox .second_service_box:hover{
+    opacity: 1;
+    border-style: solid;
+    /* border-width: 1px 1px 1px 1px; */
+    border-color: #2EDAF1;
+    /* border-radius: 50px 50px 50px 50px; */
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+
+.content_of_second_service_box
+{
+    width: 100%;
+    height: 35vh;
+    opacity: 1;
+}
+.content_of_second_service_box {
+    width: 100%;
+    height: 35hv;
+}
+
+.content_of_second_service_box  i{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+    opacity: 0.3;
+    margin-left: 50px;
+}
+.content_of_second_service_box  p{
+    color: rgb(248, 248, 248);
+    font-size: 15px;
+    text-align: left;
+       /* font-family: 'Orbitron', sans-serif; */
+    margin-top: 50px;
+    opacity: 1;
+    padding-left: 20px;
+    /* top:0; */
+}
+.content_of_second_service_box  #machinelearning{
+    color: rgb(248, 248, 248);
+    text-align: center;
+    font-size: 23px;
+       font-family: 'Orbitron', sans-serif;
+    opacity: 1;
+    padding-left: 20px;
+}
+.content_of_second_service_box:hover > i{
+    text-align: left;
+    opacity: 1;
+    color: aqua;
+}
+.content_of_second_service_box  i{
+    text-decoration: none;
+    color: rgb(7, 255, 255);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.services .servicebox .third_service_box{
+    width: 23%;
+    height: 50vh;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-connected-dots-lines-blue-background-communication-technology-network-concept-with-moving-lines-dots_34629-1120.jpg);
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%);
+    margin-left: 25px;
+    opacity: 0.5;
+    border-radius: 18px;
+    border-style: solid;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+}
+.services .servicebox .third_service_box:hover{
+    opacity: 1;
+    border-style: solid;
+    /* border-width: 1px 1px 1px 1px; */
+    border-color: #2EDAF1;
+    /* border-radius: 50px 50px 50px 50px; */
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+
+.content_of_third_service_box
+{
+    width: 100%;
+    height: 30vh;
+    opacity: 1;
+}
+.content_of_third_service_box {
+    width: 100%;
+    height: 35hv;
+}
+
+.content_of_third_service_box  i{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+    opacity: 0.3;
+    margin-left: 50px;
+}
+.content_of_third_service_box  p{
+    color: rgb(248, 248, 248);
+    font-size: 15px;
+    text-align: left;
+       /* font-family: 'Orbitron', sans-serif; */
+    margin-top: 50px;
+    opacity: 1;
+    padding-left: 20px;
+    /* top:0; */
+}
+.content_of_third_service_box  #machinelearning{
+    color: rgb(248, 248, 248);
+    text-align: center;
+    font-size: 23px;
+       font-family: 'Orbitron', sans-serif;
+    opacity: 1;
+    padding-left: 20px;
+}
+.content_of_third_service_box:hover > i{
+    text-align: left;
+    opacity: 1;
+    color: aqua;
+}
+.content_of_third_service_box  i{
+    text-decoration: none;
+    color: rgb(7, 255, 255);
+    font-size: 50px;
+    cursor: pointer;
+}
+.ai_projects{
+    width: 80%;
+    margin-top: 50px;
+    height: 130vh;
+    justify-content: center;
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #0d2f3f 50%);
+    border-radius: 18px;
+    /* align-content: center; */
+    /* background-color: red; */
+}
+.ai_projects .header h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ai_projects .header p{
+    text-align: center;
+    width: 60%;
+}
+.middle{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.middle .agriculture{
+    width: 45%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://templatekit.jegtheme.com/artifice/wp-content/uploads/sites/327/elementor/thumbs/robotic-in-agriculture-futuristic-concept--e1677549272218-q2syvzf23bjj3u8g6nq4qh6s5y0zddrsimlpege45s.jpg);
+    background-size: cover;
+    border-radius: 18px;
+}
+.middle .agriculture .miniagriculture{
+    width: 80%;
+    border-radius: 18px;
+    height: 30vh;
+    margin-top: 450px;
+    background-color: #01141D;
+}
+.middle .Robotic{
+    width: 45%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    background-image: url(https://templatekit.jegtheme.com/artifice/wp-content/uploads/sites/327/elementor/thumbs/the-advancement-of-technology-has-helped-to-alleviate-human-burdens--e1677549206744-q2syu9dpk96ltkqk8wwr5wucyiir9cxia3jnq6y3kg.jpg);
+    background-size: cover;
+    border-radius: 18px;
+}
+.middle .Robotic .miniRobotic{
+    width: 80%;
+    height: 30vh;
+    margin-top: 450px;
+    background-color: #01141D;
+    border-radius: 18px;
+}
+.miniagriculture h2{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+.miniagriculture #para{
+    color: grey;
+    align-items: center;
+    text-align: left;
+    margin: 20px 20px 20px 20px;
+    margin-top: 30px;
+
+}
+.miniagriculture #details{
+    color: aqua;
+    font-family: 'Orbitron', sans-serif;
+
+}
+.miniRobotic h2{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+.miniRobotic #para{
+    color: grey;
+    align-items: center;
+    text-align: left;
+    margin: 20px 20px 20px 20px;
+    margin-top: 30px;
+
+}
+.miniRobotic #details{
+    color: aqua;
+    font-family: 'Orbitron', sans-serif;
+
+}
+.bottom{
+    margin-top: 100px;
+}
+.bottom .button{
+    width: 200px;
+    height: 59px;
+    margin-top: 30px;
+    font-size: 15px;
+    border-radius: 28px;
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%); 
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    padding: 20px 32px 20px 32px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+.potential{
+    margin-top: 150px;
+    display: flex;
+    /* background-color: red; */
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%); 
+
+    height: 60vh;
+    width: 100%;
+    justify-content: center;
+}
+.potential .left{
+    width: 50%;
+    height:90vh;
+    /* justify-content: center; */
+}
+.potential .left img{
+    margin-top: -40px;
+    /* position: absolute; */
+    width: 100%;
+    height: 490px;
+}
+.potential .right{
+    width: 40%;
+    height: 60vh;
+    /* justify-content: center; */
+    /* background-color: red; */
+}
+.potential .right h1{
+    text-align: left;
+    margin-top: 100px;
+    font-size: 40px;
+}
+.potential .right p{
+    text-align: left;
+    margin: 30px;
+}
+.potential .right button{
+    width: 200px;
+    height: 59px;
+    margin-top: 30px;
+    font-size: 15px;
+    border-radius: 28px;
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%); 
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    padding: 20px 32px 20px 32px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+.lastbottom{
+    margin-top: 50px;
+    width: 80%;
+    height:10vh;
+    display: flex;
+    /* justify-content: center; */
+    /* background-color: red; */
+}
+.lastbottom .left{
+    width: 33%;
+    height: 10vh;
+}
+.lastbottom .left p{
+    text-align: left;
+}
+.lastbottom .middle{
+    width: 33%;
+    height: 10vh;
+    /* background-color: red; */
+}
+.lastbottom .middle p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+.lastbottom .middle h1{
+    text-align: center;
+}
+.lastbottom .right{
+    width: 33%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.lastbottom .right i{
+    font-size: 30px;
+    color: white;
+    margin-left: 30px;
+}
+.lastbottom .right i:hover{
+    transform: translateY(-10px);
+    color: aqua;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    /* body{
+        overflow: hidden;
+    } */
+    .container {
+        width: 178%;
+        overflow: hidden;
+        height: 100vh;
+        transition: 3s linear;
+        height: 90vh;
+    }
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:217%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7); 
+        pointer-events: none;
+        z-index: -1;
+        object-fit: cover;
+        overflow: hidden;
+      }
+
+    .mainhome h1 {
+        margin-top: 260px;
+        font-size: 82px;
+        color: aqua;
+    }
+    .secondcontainer{
+        width: 100%;
+    }
+    .secondhome{
+        margin-top: 0px;
+        /* width: 178%; */
+        width: 218%;
+    }
+    .backgroundofsecondhome{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 0px;
+        overflow: hidden;
+        
+    }
+    .rightsecondhome h1 {
+        color: rgb(73, 255, 255);
+        font-size: 50px;
+        width: 100%;
+        margin-left: 100%;
+        font-family: 'Orbitron', sans-serif;
+    }
+    .secondhome .backgroundofsecondhome{
+        width: 100%;
+        justify-content: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .rightsecondhome #explore{
+        margin-left: 130%;
+    }
+    .demo img {
+        /* width: 100%; */
+        /* height: 100vh; */
+        margin-top: -80%;
+        /* margin-right: 80%; */
+        margin-left: -15%;
+    }
+  }

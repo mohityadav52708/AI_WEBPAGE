@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Orbitron:wght@400;500;800&family=Ubuntu&family=Varela+Round&display=swap'); */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030210;
+}
+.login_container{
+    width: 40%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-color: #00E1FF24;
+    border-radius: 28px;
+}
+.login_container{
+    /* flex-direction: column; */
+    width: 30%;
+    height: 60vh;
+    margin-left: 20px;
+    text-align: left;
+    background-color: transparent;
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%);
+    padding: 40px 40px 40px 40px;
+    padding: 29px 38px 12px 40px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF29;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;    
+}
+.login_container:hover{
+    transform: translateY(-10px);
+    transition: 0.7s ;
+    /* transition: transform 0.3s ease-in;   */
+    color: black;
+    background-image: radial-gradient(at top right,#01141D 0%, #00E1FF24 50%);
+}
+.heading{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    color: aqua;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.heading h1{
+    font-family: 'Orbitron', sans-serif;
+}
+.login_content{
+    width: 100%;
+    height: 60vh;
+}
+
+.name{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.name label{
+    color: aqua;
+    font-size: 20px;
+}
+.name input{
+    margin-top: 10px;
+    padding-left: 0px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid aqua;
+    outline: none;
+    background: transparent;
+    color: aqua;
+    font-size: 17px;
+}
+
+.email{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.email label{
+    margin-top: 20px;
+    color: aqua;
+    font-size: 20px;
+}
+.email input{
+    margin-top: 10px;
+    padding-left: 0px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid aqua;
+    outline: none;
+    background: transparent;
+    color: aqua;
+    font-size: 17px;
+}
+.query{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.query label{
+    color: aqua;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.query input{
+    margin-top: 10px;
+    padding-left: 0px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid aqua;
+    outline: none;
+    background: transparent;
+    color: aqua;
+    font-size: 17px;
+}
+
+.submit{
+    width:150px;
+    height: 49px;
+    margin-top: 40px;
+    font-size: 18px;
+    border-radius: 28px;
+    background-image: radial-gradient(at top right, #00E1FF24 0%, #01141D 50%); 
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2EDAF1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 24px 0px rgba(45.99999999999999, 217.9999999999999, 240.99999999999997, 0.49) inset;
+    padding: 10px 32px 20px 32px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}

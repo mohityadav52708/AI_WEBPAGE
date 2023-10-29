@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .search{
+        display: inline-flex;
+        align-items: center;
+        background-color: #c22957;
+        color: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #fff;
+    }
+    .search :is(input,button){
+        background:transparent;
+        color: inherit;
+        border: none;
+        outline: none;
+    }
+    .searchinput{
+        width: 0;
+        transition: width 0.5s;
+    }
+    .searchbutton{
+        display: grid;
+        place-items: center;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        transition: color 0.25s;
+    }
+    .searchbutton:hover{
+        color: #e3e3e3;
+    }
+    .search:focus-within input{
+        width: 200px;
+    }
+    ::placeholder{
+        font: inherit;
+        color: #e3e3e3;
+    }
+</style>
+<body>
+    <form action="" class="search">
+        <input type="text" placeholder="Search"class="searchinput">
+        <button type="button" class="searchbutton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
+</body>
+</html>

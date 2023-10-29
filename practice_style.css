@@ -1,0 +1,183 @@
+
+
+img {
+    width: 100%;
+    }
+    *{
+        margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      
+      width: 100%;
+      
+    }
+    .container{
+        width: 100%;
+        height: 400vh;
+    }
+    .cover{
+        animation: slideBackgroundAnimation 2s ;
+        margin-top: 0px;
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://wallpaperaccess.com/full/3666140.jpg);
+    }
+    .covertwo{
+        margin-top: 0px;
+        animation: slide 2s ;
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://wallpaperaccess.com/full/3666140.jpg);
+    }
+    .hello{
+      text-align: center;
+    }
+    @keyframes slideBackgroundAnimation {
+      0% {
+        margin-left: -100%;
+        width: 100%;
+      }
+      100% {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    /* @keyframes covertwo {
+      0% {
+        margin-top: -40%;
+        width: 100%;
+      }
+      100% {
+        margin-top: 0%;
+        width: 100%;
+      }
+    } */
+    @keyframes animationupdate {
+      from {
+        margin-left: 100%;
+        width: 100%;
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    .whatsapp{
+      animation: animationupdate 2s ease-in;
+      width: 100%;
+      height:100vh;
+      text-align: center;
+    }
+    .slideanim{
+        width: 100%;
+        /* height: 100vh; */
+    }
+    .slideanim {
+        visibility:hidden;
+        visibility:visible\9;
+    }
+    .slideanim.slide {                  
+        visibility: visible;                  
+        animation: slide 1s;
+    }
+    .slideanim.slidethree {                  
+        visibility: visible;                  
+        animation: slide 1s;
+    }
+    .slideanim::after {
+        /* useful when its child elements are float:left; */
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @keyframes slide {
+        0% {
+            opacity: 0;
+            transform: translateY(50%);
+        } 
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        } 
+    }
+    @keyframes slidethree {
+        0% {
+            opacity: 0;
+            transform: translateX(30%);
+        } 
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        } 
+    }
+    .second{
+      animation: slidethree 2s;
+    }
+    .images{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .images img{
+      width: 400px;
+      /* height: 30vh; */
+      mix-blend-mode: color-burn;
+    }
+    .images #imageone{
+      transform: rotate(30deg);
+    }
+    .images #imagetwo{
+      transform: rotate(-30deg);
+    }
+    @keyframes slidethreeone {
+      0% {
+          /* opacity: 0; */
+          /* transform: translateX(-130%); */
+          margin-left: -100%;
+          transform: rotate(60deg);
+      } 
+      100% {
+          /* opacity: 1; */
+          transform: translateX(0);
+          transform: rotate(30deg);
+      } 
+  }
+    @keyframes slidethreetwo {
+      0% {
+        
+          margin-right: 100%;
+          transform: translateX(-50%);
+      } 
+      100% {
+        
+          /* opacity: 1; */
+          margin-right: 0%;
+          transform: translateX(0);
+          transform: rotate(-30deg);
+      } 
+  }
+    .images #imageone{
+      animation: slidethreeone 2s;
+    }
+    @keyframes animationupdatetwo {
+      from {
+        margin-left: 100%;
+        width: 100%;
+      }
+      to {
+        margin-left: 0%;
+        /* width: 100%; */
+      }
+    }
+    .images #imagetwo{
+      /* animation: slidethreetwo 2s; */
+      background-repeat: repeat-x;
+      animation:animationupdatetwo 2s linear ;
+
+      /* transform: rotate(-30deg); */
+
+    }
+
